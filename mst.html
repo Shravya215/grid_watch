@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>MST Simulation</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1 class="page-title">
+  ⚡ MST Simulation
+</h1>
+
+
+<div class="container">
+
+  <input
+    type="text"
+    id="from"
+    placeholder="From Station">
+
+  <input
+    type="text"
+    id="to"
+    placeholder="To Station">
+
+  <input
+    type="number"
+    id="cost"
+    placeholder="Transmission Cost">
+
+
+  <button onclick="addEdge()">
+    Add Edge
+  </button>
+
+
+  <button onclick="runKruskal()">
+    Run Kruskal's
+  </button>
+
+
+  <button onclick="runPrims()">
+    Run Prim's
+  </button>
+
+
+  <div id="edgeList"></div>
+  <canvas id="graphCanvas"
+        width="900"
+        height="500">
+</canvas>
+
+  <div id="output"></div>
+
+</div>
+
+<script src="mst.js"></script>
+
+</body>
+
+</html>

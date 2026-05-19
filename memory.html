@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Memory Allocation</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1 class="page-title">
+  💾 Memory Allocation
+</h1>
+
+
+<div class="container">
+
+  <!-- MEMORY BLOCKS -->
+
+  <h2>Memory Blocks</h2>
+
+  <input
+    type="number"
+    id="blockCount"
+    placeholder="Enter number of memory blocks">
+
+  <button onclick="generateBlockTable()">
+    Generate Blocks
+  </button>
+
+  <div id="blockTable"></div>
+
+
+
+  <!-- PROCESSES -->
+
+  <h2 style="margin-top:40px;">
+    Processes
+  </h2>
+
+  <input
+    type="number"
+    id="processCount"
+    placeholder="Enter number of processes">
+
+  <button onclick="generateProcessTable()">
+    Generate Processes
+  </button>
+
+  <div id="processTable"></div>
+
+
+
+  <!-- ALGORITHM BUTTONS -->
+
+  <div class="buttons">
+
+  <button onclick="runFirstFit()">
+    Run First Fit
+  </button>
+
+  <button onclick="runBestFit()">
+    Run Best Fit
+  </button>
+
+  <button onclick="runWorstFit()">
+    Run Worst Fit
+  </button>
+
+  <button onclick="deallocateMemory()">
+    Deallocate Memory
+  </button>
+
+</div>
+
+
+
+  <!-- OUTPUT -->
+
+  <div id="output"></div>
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="memory.js"></script>
+
+</body>
+
+</html>
